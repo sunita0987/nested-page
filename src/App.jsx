@@ -8,7 +8,7 @@ import NavBar from "./components/NavBar";
 import Home from"./pages/Home"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
-import Slider from "./components/Slider";
+import Slider from "./components/Carousal";
 import CounterApp from "./components/CounterApp";
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
           contact="Sunita@gmail.com"
         />
       </div>
-      <div className="min-h-screen bg-gray-100">
+      <div className="min-h-screen bg-gray-700 p-4 "> 
       <h1 className="text-3xl font-bold text-center pt-6">Product List</h1>
       <ProductList/>
       </div>
