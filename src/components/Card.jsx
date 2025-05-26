@@ -6,7 +6,7 @@ const Card = ({ name, image, bio, contact }) => {
 
   return (
     <div className="max-w-full rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-      <img src={"src/assets/images/sunitaverma.jpg"} alt={name} className="w-45 h-45 rounded-xl" />
+      <img src={"/images/sunitaverma.jpg"} alt={name} className="w-45 h-45 rounded-xl" />
       <div className="p-5">
         <h2 className="text-xl font-semibold text-gray-800">{name}</h2>
         <p className="mt-2 text-gray-600">{bio}</p>
