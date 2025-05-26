@@ -9,7 +9,7 @@ import Home from"./pages/Home"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Slider from "./components/Slider";
-// import CounterApp from "./components/CounterApp";
+import CounterApp from "./components/CounterApp";
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Slider />
-        {/* <CounterApp/> */}
+        <CounterApp/>
     </>
   );
 }
