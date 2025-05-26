@@ -7,15 +7,15 @@ import React from 'react';
 const slides = [
   {
     title: 'Beautiful Mountain',
-    image: 'public/images/flower1.jpg ',
+    image: '/images/flower1.jpg ',
   },
   {
     title: 'Serene Beach',
-    image: 'public/images/flower2.jpg ',
+    image: '/images/flower2.jpg ',
   },
   {
     title: 'City Lights',
-    image: 'public/images/flower3.jpg',
+    image: '/images/flower3.jpg',
   },
 ];
 
