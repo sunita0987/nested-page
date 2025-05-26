@@ -8,7 +8,7 @@ import NavBar from "./components/NavBar";
 import Home from"./pages/Home"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
-// import Slider from "./components/Slider";
+import Slider from "./components/Slider";
 // import CounterApp from "./components/CounterApp";
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        {/* <Slider /> */}
+        <Slider />
         {/* <CounterApp/> */}
     </>
   );
