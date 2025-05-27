@@ -48,9 +48,9 @@ export default function Carousel() {
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="w-full h-56 object-cover"
+                className="w-full h-56 object-cover rounded-sm-lg "
               />
-              <div className="p-4 bg-green-700 rounded-b-xl border-t-5 border-red-800">
+              <div className="p-4 bg-green-700 rounded-b-xl border-t-5 border-gray-700">
                 <h2 className="text-xl font-semibold text-white ">
                   {slide.title}
                 </h2>

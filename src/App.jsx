@@ -10,7 +10,6 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Slider from "./components/Carousal";
 import CounterApp from "./components/CounterApp";
-
 function App() {
   return (
     <>
