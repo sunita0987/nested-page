@@ -7,7 +7,7 @@ const Card = ({ name, image, bio, contact }) => {
   return (
     <div className=" max-w-full rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
       <img
-        src={"/images/sunitaverma.jpg"}
+        src={"/images/sunita.png"}
         alt={name}
         className="w-full h-48  rounded-xl hover:scale-105 transition-transform duration-300"
       />

@@ -37,14 +37,6 @@ const NavBar = () => {
           Contact
         </NavLink>
       </div>
-
-      <div className="text-sm text-gray-500 text-center sm:text-left">
-        {isHome || isAbout
-          ? "Welcome to our website!"
-          : isContact
-          ? "Feel free to reach out!"
-          : ""}
-      </div>
     </nav>
   );
 };
