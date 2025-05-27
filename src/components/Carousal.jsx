@@ -1,21 +1,21 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import React from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import React from "react";
 const slides = [
   {
-    title: 'Beautiful Mountain',
-    image: '/images/flower1.jpg ',
+    title: "Flower",
+    image: "/images/flower1.jpg ",
   },
   {
-    title: 'Serene Beach',
-    image: '/images/flower2.jpg ',
+    title: "Rose ",
+    image: "/images/flower2.jpg ",
   },
   {
-    title: 'City Lights',
-    image: '/images/flower3.jpg',
+    title: " Beautiful Image",
+    image: "/images/bestimg.jpg",
   },
 ];
 
@@ -29,7 +29,7 @@ export default function Carousel() {
         navigation
         pagination={{ clickable: true }}
         loop
-        autoplay={{ delay:1000 }}
+        autoplay={{ delay: 100 }}
         breakpoints={{
           640: {
             slidesPerView: 1,
@@ -51,7 +51,9 @@ export default function Carousel() {
                 className="w-full h-56 object-cover"
               />
               <div className="p-4 bg-white">
-                <h2 className="text-xl font-semibold text-gray-800">{slide.title}</h2>
+                <h2 className="text-xl font-semibold text-gray-800">
+                  {slide.title}
+                </h2>
               </div>
             </div>
           </SwiperSlide>
@@ -60,4 +62,3 @@ export default function Carousel() {
     </div>
   );
 }
-

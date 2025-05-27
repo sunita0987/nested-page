@@ -14,11 +14,9 @@ const CounterApp = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+    <div className="flex flex-col items-center justify-center  bg-gray-100 p-4">
       <h1 className="text-3xl font-bold mb-4">React Counter App</h1>
-
       <div className="text-5xl font-bold mb-6">{count}</div>
-
       <div className="flex gap-4">
         <button
           onClick={() => setCount(count + 1)}
@@ -33,20 +31,18 @@ const CounterApp = () => {
         >
           Decrement
         </button>
-
         <button
           onClick={handleReset}
           className={`${
             count === 0
               ? "bg-gray-400 cursor-not-allowed"
               : "bg-blue-500 hover:bg-blue-600"
-          } text-white px-6 py-2 rounded-lg shadow`}
+          } text-white px-6 py-2 rounded-lg shadow cursor-pointer`}
           disabled={count === 0}
         >
           Reset
         </button>
       </div>
-
       <div
         className="mt-6 relative"
         onMouseEnter={() => setShowTooltip(true)}

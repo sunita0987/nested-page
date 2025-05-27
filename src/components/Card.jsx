@@ -9,7 +9,7 @@ const Card = ({ name, image, bio, contact }) => {
       <img
         src={"/images/sunita.png"}
         alt={name}
-        className="w-full h-48  rounded-xl hover:scale-105 transition-transform duration-300"
+        className="w-full h-48  rounded-xl hover:scale-105 transition-transform duration-300 object-cover"
       />
       <div className="p-5">
         <h2 className="text-xl font-semibold text-gray-800">{name}</h2>

@@ -24,13 +24,12 @@ function App() {
       <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
         <Card
           name="Sunita verma"
-          image={"src/assets/images/sunitaverma.jpg"}
           bio=" front-end developer"
           contact="Sunita@gmail.com"
         />
       </div>
       <div className="min-h-screen bg-gray-700 p-4 "> 
-      <h1 className="text-3xl font-bold text-center pt-6">Product List</h1>
+      <h1 className="text-3xl font-bold text-center pt-6 text-red-500">Product List</h1>
       <ProductList/>
       </div>
         <Slider />
