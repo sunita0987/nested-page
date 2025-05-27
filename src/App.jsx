@@ -23,9 +23,9 @@ function App() {
         </Routes>
       <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
         <Card
-          name="Sunita verma"
-          bio=" front-end developer"
-          contact="Sunita@gmail.com"
+          name="SUNITA VERMA"
+          bio=" Front-End Developer"
+          contact="SunitaVerma@gmail.com"
         />
       </div>
       <div className="min-h-screen bg-gray-700 p-4 "> 
