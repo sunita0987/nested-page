@@ -6,7 +6,6 @@ const NavBar = () => {
   const isHome = location.pathname === "/home";
   const isAbout = location.pathname === "/about";
   const isContact = location.pathname === "/contact";
-
   return (
     <nav className="bg-white shadow-md px-6 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-6">
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 const CounterApp = () => {
   const [count, setCount] = useState(0);
   const [showTooltip, setShowTooltip] = useState(false);
@@ -24,13 +25,13 @@ const CounterApp = () => {
       <div className="flex flex-col sm:flex-row gap-4">
         <button
           onClick={() => setCount(count + 1)}
-          className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg shadow cursor-pointer w-full sm:w-auto"
+          className="bg-green-500 hover:bg-green-600 text-white hover:text-black px-6 py-2 rounded-lg shadow cursor-pointer w-full sm:w-auto"
         >
           Increment
         </button>
         <button
           onClick={() => setCount(count - 1)}
-          className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg shadow cursor-pointer w-full sm:w-auto"
+          className="bg-red-500 hover:bg-red-600 text-white hover:text-black px-6 py-2 rounded-lg shadow cursor-pointer w-full sm:w-auto"
         >
           Decrement
         </button>
@@ -52,7 +53,7 @@ const CounterApp = () => {
         onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}
       >
-        <button className="bg-purple-500 text-white px-4 py-2 rounded-lg shadow cursor-pointer">
+        <button className="bg-purple-500 text-white px-4 py-2 rounded-lg shadow cursor-pointer hover:bg-purple-700">
           Hover me
         </button>
         {showTooltip && (
