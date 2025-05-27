@@ -24,12 +24,12 @@ export default function Carousel() {
     <div className="w-full max-w-4xl mx-auto py-8">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={30}
+        spaceBetween={40}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
         loop
-        autoplay={{ delay: 100 }}
+        autoplay={{ delay: 500 }}
         breakpoints={{
           640: {
             slidesPerView: 1,
@@ -44,14 +44,14 @@ export default function Carousel() {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="rounded-lg overflow-hidden shadow-lg">
+            <div className="rounded-lg overflow-hidden ">
               <img
                 src={slide.image}
                 alt={slide.title}
                 className="w-full h-56 object-cover"
               />
-              <div className="p-4 bg-white">
-                <h2 className="text-xl font-semibold text-gray-800">
+              <div className="p-4 bg-green-700 rounded-b-xl border-t-5 border-red-800">
+                <h2 className="text-xl font-semibold text-white ">
                   {slide.title}
                 </h2>
               </div>

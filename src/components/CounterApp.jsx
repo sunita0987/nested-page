@@ -1,18 +1,14 @@
 import React from "react";
 import { useState, useEffect } from "react";
-
 const CounterApp = () => {
   const [count, setCount] = useState(0);
   const [showTooltip, setShowTooltip] = useState(false);
-
   useEffect(() => {
     console.log(`Count changed to: ${count}`);
   }, [count]);
-
   const handleReset = () => {
     setCount(0);
   };
-
   return (
     <div className="flex flex-col items-center justify-center  bg-gray-100 p-4">
       <h1 className="text-3xl font-bold mb-4">React Counter App</h1>
@@ -24,7 +20,6 @@ const CounterApp = () => {
         >
           Increment
         </button>
-
         <button
           onClick={() => setCount(count - 1)}
           className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg shadow cursor-pointer "
@@ -60,5 +55,4 @@ const CounterApp = () => {
     </div>
   );
 };
-
 export default CounterApp;
